@@ -33,9 +33,11 @@ class ViewController: UIViewController {
         progressView.sizeToFit()
         let progressButton = UIBarButtonItem(customView: progressView)
 
+        let back = UIBarButtonItem(barButtonSystemItem: .rewind, target: webView, action: #selector(webView.goBack))
+        let forward = UIBarButtonItem(barButtonSystemItem: .fastForward, target: webView, action: #selector(webView.goForward))
         let spacer = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         let refresh = UIBarButtonItem(barButtonSystemItem: .refresh, target: webView, action: #selector(webView.reload))
-        toolbarItems = [progressButton, spacer, refresh]
+        toolbarItems = [back, forward, spacer, progressButton, spacer, refresh]
         navigationController?.isToolbarHidden = false
 
         // Configure Web View
@@ -82,6 +84,11 @@ extension ViewController: WKNavigationDelegate {
             }
         }
 
+        let alert = UIAlertController(title: "URL Forbidden", message: nil, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
+            self.dismiss(animated: true, completion: nil)
+        }))
+        present(alert, animated: true, completion: nil)
         decisionHandler(.cancel)
     }
 
