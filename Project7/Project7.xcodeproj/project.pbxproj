@@ -12,6 +12,8 @@
 		AA1C70FA22B988CE00F9C41C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA1C70F822B988CE00F9C41C /* Main.storyboard */; };
 		AA1C70FC22B988D300F9C41C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA1C70FB22B988D300F9C41C /* Assets.xcassets */; };
 		AA1C70FF22B988D300F9C41C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA1C70FD22B988D300F9C41C /* LaunchScreen.storyboard */; };
+		AA36280622BA9808001EDDEE /* Petition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA36280522BA9808001EDDEE /* Petition.swift */; };
+		AA36280822BA98BF001EDDEE /* Petitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA36280722BA98BF001EDDEE /* Petitions.swift */; };
 		AAAD5EAE22BBD9FA00F6F9D2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAD5EAD22BBD9FA00F6F9D2 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,8 @@
 		AA1C70FB22B988D300F9C41C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA1C70FE22B988D300F9C41C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA1C710022B988D300F9C41C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA36280522BA9808001EDDEE /* Petition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Petition.swift; sourceTree = "<group>"; };
+		AA36280722BA98BF001EDDEE /* Petitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Petitions.swift; sourceTree = "<group>"; };
 		AAAD5EAD22BBD9FA00F6F9D2 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,6 +62,8 @@
 			children = (
 				AA1C70F422B988CE00F9C41C /* AppDelegate.swift */,
 				AA1C70F622B988CE00F9C41C /* ViewController.swift */,
+				AA36280522BA9808001EDDEE /* Petition.swift */,
+				AA36280722BA98BF001EDDEE /* Petitions.swift */,
 				AAAD5EAD22BBD9FA00F6F9D2 /* DetailViewController.swift */,
 				AA1C70F822B988CE00F9C41C /* Main.storyboard */,
 				AA1C70FB22B988D300F9C41C /* Assets.xcassets */,
@@ -140,7 +146,9 @@
 			files = (
 				AAAD5EAE22BBD9FA00F6F9D2 /* DetailViewController.swift in Sources */,
 				AA1C70F722B988CE00F9C41C /* ViewController.swift in Sources */,
+				AA36280822BA98BF001EDDEE /* Petitions.swift in Sources */,
 				AA1C70F522B988CE00F9C41C /* AppDelegate.swift in Sources */,
+				AA36280622BA9808001EDDEE /* Petition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
