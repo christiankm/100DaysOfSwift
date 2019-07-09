@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     var score = 0
 
     var correctAnswer = 0
+    
+    var highscore = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +46,8 @@ class ViewController: UIViewController {
             "uk",
             "us"
         ]
+        
+        highscore = UserDefaults.standard.integer(forKey: "highscore")
 
         askQuestion()
     }
@@ -63,16 +67,18 @@ class ViewController: UIViewController {
         if sender.tag == correctAnswer {
             title = "Correct"
             score += 1
+            
+            if score > highscore {
+                UserDefaults.standard.set(score, forKey: "highscore")
+            }
         } else {
             title = "Wrong. This is \(countries[sender.tag].uppercased())"
             score -= 1
         }
 
-
-        if score == 5 {
-            let alertController2 = UIAlertController(title: title, message: "BOOM! You got \(score)!", preferredStyle: .alert)
-            alertController2.addAction(UIAlertAction(title: "Bummer", style: .default, handler: { (action) in
-                self.score = 0
+        if score == highscore {
+            let alertController2 = UIAlertController(title: title, message: "You set a new highscore!", preferredStyle: .alert)
+            alertController2.addAction(UIAlertAction(title: "Great", style: .default, handler: { (action) in
                 self.askQuestion()
             }))
             present(alertController2, animated: true)
