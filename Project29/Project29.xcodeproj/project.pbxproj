@@ -14,14 +14,9 @@
 		AA1803C222EB75060097BF55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA1803C022EB75060097BF55 /* Main.storyboard */; };
 		AA1803C422EB75070097BF55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA1803C322EB75070097BF55 /* Assets.xcassets */; };
 		AA1803C722EB75070097BF55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA1803C522EB75070097BF55 /* LaunchScreen.storyboard */; };
-		AA1803D622EB778D0097BF55 /* hitBuilding.sks in Resources */ = {isa = PBXBuildFile; fileRef = AA1803CF22EB778D0097BF55 /* hitBuilding.sks */; };
-		AA1803D722EB778D0097BF55 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1803D022EB778D0097BF55 /* spark.png */; };
-		AA1803D822EB778D0097BF55 /* player@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1803D122EB778D0097BF55 /* player@2x.png */; };
-		AA1803D922EB778D0097BF55 /* player1Throw@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1803D222EB778D0097BF55 /* player1Throw@2x.png */; };
-		AA1803DA22EB778D0097BF55 /* banana@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1803D322EB778D0097BF55 /* banana@2x.png */; };
-		AA1803DB22EB778D0097BF55 /* hitPlayer.sks in Resources */ = {isa = PBXBuildFile; fileRef = AA1803D422EB778D0097BF55 /* hitPlayer.sks */; };
-		AA1803DC22EB778D0097BF55 /* player2Throw@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1803D522EB778D0097BF55 /* player2Throw@2x.png */; };
 		AA1803DE22EB781F0097BF55 /* BuildingNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1803DD22EB781F0097BF55 /* BuildingNode.swift */; };
+		AA1803E222EB94A00097BF55 /* hitPlayer.sks in Resources */ = {isa = PBXBuildFile; fileRef = AA1803E022EB949F0097BF55 /* hitPlayer.sks */; };
+		AA1803E322EB94A00097BF55 /* hitBuilding.sks in Resources */ = {isa = PBXBuildFile; fileRef = AA1803E122EB94A00097BF55 /* hitBuilding.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,14 +29,9 @@
 		AA1803C322EB75070097BF55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA1803C622EB75070097BF55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA1803C822EB75070097BF55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA1803CF22EB778D0097BF55 /* hitBuilding.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = hitBuilding.sks; sourceTree = "<group>"; };
-		AA1803D022EB778D0097BF55 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
-		AA1803D122EB778D0097BF55 /* player@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player@2x.png"; sourceTree = "<group>"; };
-		AA1803D222EB778D0097BF55 /* player1Throw@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player1Throw@2x.png"; sourceTree = "<group>"; };
-		AA1803D322EB778D0097BF55 /* banana@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banana@2x.png"; sourceTree = "<group>"; };
-		AA1803D422EB778D0097BF55 /* hitPlayer.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = hitPlayer.sks; sourceTree = "<group>"; };
-		AA1803D522EB778D0097BF55 /* player2Throw@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player2Throw@2x.png"; sourceTree = "<group>"; };
 		AA1803DD22EB781F0097BF55 /* BuildingNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingNode.swift; sourceTree = "<group>"; };
+		AA1803E022EB949F0097BF55 /* hitPlayer.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = hitPlayer.sks; path = Project29/Content/hitPlayer.sks; sourceTree = SOURCE_ROOT; };
+		AA1803E122EB94A00097BF55 /* hitBuilding.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = hitBuilding.sks; path = Project29/Content/hitBuilding.sks; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +64,7 @@
 		AA1803B522EB75060097BF55 /* Project29 */ = {
 			isa = PBXGroup;
 			children = (
-				AA1803CE22EB778D0097BF55 /* Content */,
+				AA1803DF22EB920D0097BF55 /* Nodes */,
 				AA1803B622EB75060097BF55 /* AppDelegate.swift */,
 				AA1803B822EB75060097BF55 /* GameScene.sks */,
 				AA1803BC22EB75060097BF55 /* GameScene.swift */,
@@ -88,18 +78,13 @@
 			path = Project29;
 			sourceTree = "<group>";
 		};
-		AA1803CE22EB778D0097BF55 /* Content */ = {
+		AA1803DF22EB920D0097BF55 /* Nodes */ = {
 			isa = PBXGroup;
 			children = (
-				AA1803CF22EB778D0097BF55 /* hitBuilding.sks */,
-				AA1803D022EB778D0097BF55 /* spark.png */,
-				AA1803D122EB778D0097BF55 /* player@2x.png */,
-				AA1803D222EB778D0097BF55 /* player1Throw@2x.png */,
-				AA1803D322EB778D0097BF55 /* banana@2x.png */,
-				AA1803D422EB778D0097BF55 /* hitPlayer.sks */,
-				AA1803D522EB778D0097BF55 /* player2Throw@2x.png */,
+				AA1803E122EB94A00097BF55 /* hitBuilding.sks */,
+				AA1803E022EB949F0097BF55 /* hitPlayer.sks */,
 			);
-			path = Content;
+			path = Nodes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,16 +146,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA1803C222EB75060097BF55 /* Main.storyboard in Resources */,
-				AA1803DC22EB778D0097BF55 /* player2Throw@2x.png in Resources */,
-				AA1803D822EB778D0097BF55 /* player@2x.png in Resources */,
-				AA1803DB22EB778D0097BF55 /* hitPlayer.sks in Resources */,
-				AA1803D922EB778D0097BF55 /* player1Throw@2x.png in Resources */,
-				AA1803DA22EB778D0097BF55 /* banana@2x.png in Resources */,
-				AA1803D722EB778D0097BF55 /* spark.png in Resources */,
-				AA1803D622EB778D0097BF55 /* hitBuilding.sks in Resources */,
 				AA1803B922EB75060097BF55 /* GameScene.sks in Resources */,
+				AA1803E222EB94A00097BF55 /* hitPlayer.sks in Resources */,
 				AA1803C422EB75070097BF55 /* Assets.xcassets in Resources */,
 				AA1803C722EB75070097BF55 /* LaunchScreen.storyboard in Resources */,
+				AA1803E322EB94A00097BF55 /* hitBuilding.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
